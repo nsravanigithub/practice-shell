@@ -30,7 +30,7 @@ cd /app
 unzip /tmp/backend.zip
 npm install &>>$LOGFILE
 
-cp /home/ec2-user/expenses-with-shell1/backend.service /etc/systemd/system/backend.service
+cp /home/ec2-user/practice-shell1/backend.service /etc/systemd/system/backend.service
 
 systemctl daemon-reload &>>$LOGFILE
 Validate $? "Daemon reloading"
