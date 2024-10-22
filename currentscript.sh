@@ -1,5 +1,5 @@
 #!/bin/bash
 
-currentscript=$(Devops )
-echo "Iam Learning:: $currentscript"
+currentscript=Devops
+echo "Iam Learning:: ` echo $currentscript` "
 
