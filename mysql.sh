@@ -33,13 +33,13 @@ echo "Run with root access"
 exit 1
 fi
 
-dnf install mysql-server -y &>>$LOGFILE
+dnfy install mysql-server -y &>>$LOGFILE
 #Validate $? "Installing Mysql server"
 
 systemctl enable mysqld &>>$LOGFILE
 #Validate $? "Enabling Mysql server"
 
-systemctl start mysqldd &>>$LOGFILE
+systemctl start mysqld &>>$LOGFILE
 #Validate $? "Starting Mysql server"
 
 #mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
