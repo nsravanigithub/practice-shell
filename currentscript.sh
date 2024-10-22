@@ -6,6 +6,6 @@ COURSE="DevOps from Current Script"
 
 echo "Before calling other script, course: $COURSE"
 echo "Process ID of current shell script: $$"
-./otherscript.sh
-
+#./otherscript.sh
+source ./otherscript.sh
 echo "After calling other script, course: $COURSE"
